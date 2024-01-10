@@ -21,7 +21,7 @@ export default function App() {
     return (
         <div>
             {clientSecret && (
-                <Elements options={{  }} stripe={stripePromise}>
+                <Elements options={{ clientSecret }} stripe={stripePromise}>
                     <CheckoutForm />
                 </Elements>
             )}
